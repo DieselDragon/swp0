@@ -3,7 +3,7 @@ Title: London 2600 archive: Free Files from Flash
 Description: How to obtain free media files and other interesting stuff from embedded flash applications
 Author: DieselDragon
 Date: 2006/07/18
-License: cc-by-sa 3.0
+License: cc-nc-sa 3.0
 */
 
 # Free Files from Flash
