@@ -47,13 +47,13 @@ As you can see, there is an easily spotted URL to the video. The URL itself may 
 If anyone is interested in hacking the FLV format, the original file in this case was a 320x240 Windows Media format video with MP3 audio at 30fps (I think) if that helps.
 
 ## 0x03. Quick note on XSPF files:
-As mentioned above, some audio EFPs may request an .XSPF file insted of an .MP3 file. This is actually a bonus as XSPF files are text/xml based audio playlists and can contain references and URLs to many audio files across the internet. Hacking the audio player on [The Dragonforce site](http://www.dragonforce.com) using the above method will demonstrate better what I'm talking about. Check out [XSPF](http://www.xspf.org) for full info and specifications on the format.  
-As a side-bar to this, try entering "_[Your favourite band] .mp3 filetype:xspf_" into Google and see what comes up! ;-)
+As mentioned above, some audio EFPs may request an .XSPF file insted of an .MP3 file. This is actually a bonus as XSPF files are text/xml based audio playlists and can contain references and URLs to many audio files across the internet. Hacking the audio player on the [Dragonforce site](http://www.dragonforce.com) using the above method will demonstrate better what I'm talking about. Check out [XSPF](http://www.xspf.org) for full info and specifications on the format.  
+As a side-bar to this, try entering `[Your favourite band] .mp3 filetype:xspf` into Google and see what comes up! ;-)
 
 ## 0xFF. The final word:
 I hope that this tutorial has helped you all learn a little about how Flash Players and the HTTP standard in general work. If you like to download music, please consider using this method (And buy the CD for copyright/royalty purposes of course!) as opposed to Apples iTunes...After all, I'd rather pay my favourite bands much more than a measly $0.03 for each track of theirs that I buy!
 
-Shouts to: **Bal-Sagoth** (For being the greatest band ever known to Metal!), and **Dragonforce** (For providing an excellent example for this article!)
+Shouts to: [**Bal-Sagoth**](http://www.bal-sagoth.com) (For being the greatest band ever known to Metal!), and [**Dragonforce**](http://www.dragonforce.com) (For providing an excellent example for this article!)
 
 F-yous to: **Apple** iTunes for ripping artists off much worse than bedroom pirates and "_those Hackers_" ever did!
 
