@@ -3,7 +3,7 @@ Title: London 2600 archive: Enjoying Nagware without the Nagging Price
 Description: Using Windows System Restore to deal with software which appears "Free" at first, then tries to force cash out of the user.
 Author: DieselDragon
 Date: 2008/08/18
-License: cc-by-sa 3.0
+License: cc-nc-sa 3.0
 */
 
 # Enjoying Nagware without the Nagging Price
