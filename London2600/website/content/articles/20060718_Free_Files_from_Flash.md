@@ -7,22 +7,23 @@ License: cc-by-sa 3.0
 */
 
 # Free Files from Flash
-_This article was originally written in the Summer of 2006, and was published in the Autumn 2006 issue of 2600 Magazine. A lot of the information in this article is no longer relevant now that HTML 5 is in widespread use and Flash has fallen out of favour, but it has been uploaded for historical reference. As the article was originally written for print, some changes have been made to better suit online display._ 
+_This article was originally written in the Summer of 2006, and was published in the Autumn 2006 issue of 2600 Magazine. A lot of the information in this article is no longer relevant now that HTML 5 is in widespread use and Flash has fallen out of favour, but it has been uploaded for historical reference. As the article was originally written for print, some changes have been made to better suit online display._
 
 ## 0x00. Introduction:
-Anyone who uses the internet nowadays will have noticed the increasing trend of Flash applications being used for playing embedded audio and video on web pages. Notable websites for this include YouTube (Video) and the infamous MySpace (Audio/video). Often, these Flash players are used in an attempt to play files without revealing the location of the host file to prevent users from downloading the actual files to their computers - An example of which can be found on the [DragonForce website](https://www.dragonforce.com).
+Anyone who uses the internet nowadays will have noticed the increasing trend of Flash applications being used for playing embedded audio and video on web pages. Notable websites for this include YouTube (Video) and the infamous MySpace (Audio/video). Often, these Flash players are used in an attempt to play files without revealing the location of the host file to prevent users from downloading the actual files to their computers - An example of which can be found on the [Dragonforce website](https://www.dragonforce.com).
 
-However, one thing that many webmasters have overlooked is that the use of Flash media players _does not_ guarentee that the file(s) in question will stay "safe"...After all, it's a simple fact that anything on the internet that can be viewed by the user can be downloaded...And it's a fact that has few exceptions. In this article, I'll show you how to download one of my videos from YouTube, but insted of teaching you the technique for the one specific site, I'll be showing you the general principle behind the hack which should work for most sites that use embedded Flash players. Obviously the standard disclaimers apply here, and you're the only one responsible for anything that you use this technique for. Please don't steal copyrighted works...The author of those works still has to put food on the table as much as you or I. :-)
+However, one thing that many webmasters have overlooked is that the use of Flash media players _does not_ guarentee that the file(s) in question will stay "safe"...After all, it's a simple fact that anything on the internet that can be viewed by the user can be downloaded...And it's a fact that has few exceptions. In this article, I'll show you how to download one of my videos from YouTube, but insted of teaching you the technique for the one specific site, I'll be showing you the general principle behind the hack which should work for most sites that use embedded Flash players.  
+Obviously the standard disclaimers apply here, and you're the only one responsible for anything that you use this technique for. Please don't steal copyrighted works...The author of those works still has to put food on the table as much as you or I. :-)
 
 ## 0x01. How it all works:
 When an embedded Flash player (Henceforth referred to as EFP) loads on a web page, there are a few processes that take place:
 
-1. An <OBJECT> tag causes an HTTP request to the server for the EFP,
+1. An `<OBJECT>` tag causes an HTTP request to the server for the EFP,
 2. The EFP is downloaded to temporary storage and executed using the relevant plug-in,
 3. The EFP fires off an HTTP or other request for the media file,  
 (This request might return an XSPF file in the case of audio players. More on that later...)
 4. The media file is downloaded or streamed to the EFP via temp storage or RAM,
-5. Once a decent buffer amount of data is downloaded, the EFP will start playing.
+5. Once a decent buffer amount of data is downloaded, the EFP will start playing.  
 
 In this tutorial, we'll be tracing the EFPs HTTP requests to find out where the desired media file is located.
 
