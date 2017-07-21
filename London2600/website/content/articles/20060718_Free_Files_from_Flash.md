@@ -9,6 +9,8 @@ License: cc-nc-sa 3.0
 # Free Files from Flash
 _This article was originally written in the Summer of 2006, and was published in the Autumn 2006 issue of 2600 Magazine. A lot of the information in this article is no longer relevant now that HTML 5 is in widespread use and Flash has fallen out of favour, but it has been uploaded for historical reference. As the article was originally written for print, some changes have been made to better suit online display._
 
+---
+
 ## 0x00. Introduction:
 Anyone who uses the internet nowadays will have noticed the increasing trend of Flash applications being used for playing embedded audio and video on web pages. Notable websites for this include YouTube (Video) and the infamous MySpace (Audio/video). Often, these Flash players are used in an attempt to play files without revealing the location of the host file to prevent users from downloading the actual files to their computers - An example of which can be found on the [Dragonforce website](https://www.dragonforce.com).
 
