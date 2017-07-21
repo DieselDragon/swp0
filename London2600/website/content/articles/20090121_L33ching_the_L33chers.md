@@ -41,27 +41,25 @@ As being discreet is vital, one of the two Wi-Fi cards should ideally be an inte
 ## 0x03. Uses of a PortaNet:
 So...Just what exactly can a Portanet be used for? Following are a number of interesting possibilities that could be applied to PortaNets, and - Given the nature of computing - This list is probabally just the tip of the proverbial iceberg.
 
-1. **Traffic and service re-routing:**  
+* **Traffic and service re-routing:**  
 99.9% of the time whenever a client connects to a network, they'll have their system set to obtain network info - I.P. address, DNS server address etc - Via DHCP, and this allows us to specify which DNS server the client will use for hostname resolution...Which could easily be a DNS run on our laptop, and configured to our own ends. If you dislike PayPal for example, you could set-up the DNS to return the I.P. for paypalsucks.com in response to any requests for paypal.com.  
 Likewise, redirection to a spoofed login page for any website - On the laptop itself, or elsewhere - Could be done with the same approach, with the additional benefit that the address bar in the victims browser would still display the original, legit-looking URL.  
 
-2. **Eavesdropping on "secure" communications:**  
+* **Eavesdropping on "secure" communications:**  
 The problem with conventional "passive" eavesdropping is that encrypted communications like HTTPS are exactly what they say on the tin. On the other hand, a PortaNet - As it IS the users connection - Has the potential to record such transmissions in their original plain-text form. Although probabally a complicated and rather tricky thing to set-up, the laptop could trap and encrypt/decrypt secure communications on-the-fly through the following process:
-
   1. The victim requests a secure webpage using their browser,
   2. The laptop establishes a secure connection to the victim in response to their original request, then establishes a seperate secure connection to the requested website,
   3. Transmissions between the victims browser and site are decrypted by the laptop upon arrival, the plaintext is logged/recorded, then the data is re-encrypted for transmission to it's intended destination via the second secure connection.  
-
 Obviously for seamless operation and less chance of detection by the victim, you would also need to change (If necessary) and pass on any security certificates or other authentication tokens that the victims browser would normally use to check that the connection is indeed "secure".  
 
-3. **Content shaping and hi-jacking:**  
+* **Content shaping and hi-jacking:**  
 As whatever goes to the victims browser has to pass through our laptop first, it is possible for us to change and generally mess about with whatever it is they are looking at. Simple changes for small profits could be the changing of all passing Google AdSense provider IDs to one of your own...Meaning that you'd get credited with hits every time the victim clicks any AdSense ad. Other phun could be had in the swapping of Googles logo with Yahoo's (And vice versa) and other little content injection/tampering jokes.  
 On a more serious note of course, the same technique could also be used to substitute a requested application with a keylogger or similar nasty program, or to completely reverse the meaning of an e-mail from the victim's loved one.  
 
-4. **Sharing out the cost of Internet access:**  
-  A group of 50 people (Those at a 2600 meeting, perhaps) enter a bar and settle down with their laptops and PDAs, only to find that the one available AP has some rediculous charge of £10.00 per connection, or something like that. By connecting the PortaNets upstream card as a single paid-for connection and routing it through the downstream card to everyone's devices, each user pays only 20p towards the cost of the connection...And the gr33dy so-and-so's running the AP only take £10.00 in total, insted of the £500.00 that they'd normally expect to make from such a large group.  
+* **Sharing out the cost of Internet access:**  
+A group of 50 people (Those at a 2600 meeting, perhaps) enter a bar and settle down with their laptops and PDAs, only to find that the one available AP has some rediculous charge of £10.00 per connection, or something like that. By connecting the PortaNets upstream card as a single paid-for connection and routing it through the downstream card to everyone's devices, each user pays only 20p towards the cost of the connection...And the gr33dy so-and-so's running the AP only take £10.00 in total, insted of the £500.00 that they'd normally expect to make from such a large group.  
  
-5. **Secure group communications over public Wi-Fi:**  
+* **Secure group communications over public Wi-Fi:**  
 Following on from example D above, another headache with using public WLANs is that they generally have to be open and unsecure to allow users to connect to them in the first place...Meaning that anything sent from the users device has to be encrypted before transmission to remain secure from anyone else on the network who may be running an eavesdropping tool. Using a PortaNet, it would be possible for the laptop to route all Internet traffic passing across it via an SSH tunnel or similar encrypted medium to a server running elsewhere for onward transmission, which would bypass the risk normally posed by the public WLAN being used.  
 Of course, one could normally do this from their own device anyway. But the added benefit of using a PortaNet to serve group communications in this way is that only one device (The PortaNet laptop) needs to be configured to use the SSH tunnel, and it would also afford protection for less skilled members of the group who may not know how to use such secured connections.  
 
